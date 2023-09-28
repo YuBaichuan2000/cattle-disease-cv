@@ -1,0 +1,7 @@
+_target_: src.datamodules.cow_datamodule.CowDataModule
+data_dir: ${paths.data_dir}/Cattle-Disease-Classification/01022023_new_update/data_2023
+batch_size: 16
+train_val_test_split: [476,50]
+num_workers: 0
+pin_memory: False
+annotations_file: notebooks/out.csv

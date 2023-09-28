@@ -1,0 +1,9 @@
+_target_: src.datamodules.cow_datamodule.CowDataModule
+data_dir: ${paths.data_dir}/Cattle-Disease-Classification/v2_resized
+batch_size: 64
+#train_val_test_split: [5391,600]
+train_val_test_split: [2600,2600]
+num_workers: 8
+k: -1
+pin_memory: True
+annotations_file: notebooks/v_2_out.csv
